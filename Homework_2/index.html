@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eShop</title>
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script defer src="hamburger.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <button class="cart-button" type="button">Корзина</button>
+    </header>
+    <main class="main_wrapper">
+      <div class="goods-list"></div>
+    </main>
+    <div class="hamburger_container">
+      <form id="hamburger_form" class="hamburger_form" action="#" onsubmit="burgerSubmit(event)">
+        <fieldset>
+          <legend>Размер</legend>
+          <input class="hamburger_input" type="radio" id="little" name="size" value="little" required/>
+          <label for="little">Маленький</label><br />
+          <input class="hamburger_input" type="radio" id="big" name="size" value="big" required/>
+          <label for="big">Большой</label><br />
+        </fieldset>
+        <fieldset>
+          <legend>Начинка</legend>
+          <input class="hamburger_input" type="radio" id="cheese" name="stuffing" value="cheese" required/>
+          <label for="cheese">Сыр</label><br />
+          <input class="hamburger_input" type="radio" id="salad" name="stuffing" value="salad" required/>
+          <label for="salad">Салат</label><br />
+          <input class="hamburger_input" type="radio" id="potatoes" name="stuffing" value="potatoes" required/>
+          <label for="potatoes">Картофель</label><br />
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <input class="hamburger_input" type="checkbox" id="condiment" name="toppings" value="condiment" />
+          <label for="condiment">Приправа</label><br />
+          <input class="hamburger_input" type="checkbox" id="mayonnaise" name="toppings" value="mayonnaise" />
+          <label for="mayonnaise">Майонез</label><br />
+        </fieldset>
+        <input type="submit" class="hamburger_submit" value="Посчитать">
+      </form>
+      <div class="hamburger_result">
+        <img class="hamburger_image" src="./hamburger.webp" alt="hamburger_image" />
+        <p class="hamburger_result_text">Стоимость: <span class="hamburger_price"></span></p>
+        <p class="hamburger_result_text">Каллорийность: <span class="hamburger_calories"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
