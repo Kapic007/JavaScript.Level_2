@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_4</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="form_container">
+      <form
+        id="auth_form"
+        class="auth_form"
+        action="#"
+        onsubmit="authSubmit(event)"
+      >
+        <label for="name"
+          ><p>Имя</p>
+          <input
+            class="auth_input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Иван"
+            required /></label
+        ><br />
+        <label for="phone"
+          ><p>Телефон</p>
+          <input
+            class="auth_input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+7(000)000-0000"
+            required /></label
+        ><br />
+        <label for="email"
+          ><p>E-mail</p>
+          <input
+            class="auth_input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="mymail@mail.ru"
+            required /></label
+        ><br />
+        <label for="message"
+          ><p>Сообщение</p>
+          <textarea
+            class="auth_input"
+            id="message"
+            name="message"
+            rows="10"
+            placeholder="Ваше сообщение"
+            required
+          ></textarea></label
+        ><br />
+        <input type="submit" class="auth_submit" value="Отправить" />
+      </form>
+    </div>
+  </body>
+</html>
