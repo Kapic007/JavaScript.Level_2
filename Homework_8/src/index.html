@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="wrapper calc_container">
+      <div class="calc_input">
+        <label class="calc_argument" for="first"
+          >Первый аргумент<br /><input
+            id="firstArg"
+            class="input_value"
+            type="text"
+            name="first" /><br
+        /></label>
+        <label class="calc_argument" for="second"
+          >Второй аргумент<br /><input
+            id="secondArg"
+            class="input_value"
+            type="text"
+            name="second" /><br
+        /></label>
+      </div>
+      <div class="calc_buttons">
+        <button class="calc_button" onclick="multiplication()">
+          Умножение
+        </button>
+        <button class="calc_button" onclick="division()">Деление</button>
+        <button class="calc_button" onclick="substraction()">Вычитание</button>
+        <button class="calc_button" onclick="addition()">Сложение</button>
+      </div>
+      <button class="calc_clear" onclick="clean()">Очистить</button>
+      <div id="result" class="calc_result">Ответ:</div>
+    </div>
+  </body>
+</html>
